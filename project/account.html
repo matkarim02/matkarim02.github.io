@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Log in</title>
+</head>
+<body>
+   
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+
+<div class="container">
+    <div class="navbar">
+        <div class="logo">
+            <a href="home.html"  class="shop">ShopLaptop</a> 
+        </div>
+        <nav>
+            <ul id="MenuItems">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="account.html">Account</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="support.html">Support</a></li>
+            </ul>
+        </nav>
+       <a href="cart.html"> <img src="cart.png" width="30px" height="30px"> </a>
+        <img src="menu.png" class="menu-icon" onclick="menutoggle()">
+    </div>
+   
+</div>
+
+
+
+
+
+
+<div class="account-page">
+    <div class="container">
+        <div class="row">
+            <div class="col-2">
+                <img src="laptops.png" width="100%">
+            </div>
+            <div class="col-2">
+                <div class="form-container">
+                    <div class="form-btn">
+                        <span onclick="login()">Login</span>
+                        <span onclick="register()">Register</span>
+                        <hr id="Indicator">
+                    </div>
+                    <form id="LoginForm">
+                        <input type="text" placeholder="Username">
+                        <input type="password" placeholder="Password">
+                        <button class="btn"><a href="home.html">Login</a></button>
+                        <a href="home.html">Forgot password</a>
+                    </form>
+                    <form id="RegForm">
+                        <input type="text" placeholder="Username">
+                        <input type="email" placeholder="Email">
+                        <input type="password" placeholder="Password">
+                        <input type="password" placeholder="Verify password">
+                        <button class="btn"><a href="home.html">Register</a></button>                       
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<footer>
+    <div class="waves">
+        <div class="wave" id="wave1"></div>
+        <div class="wave" id="wave2"></div>
+        <div class="wave" id="wave3"></div>
+        <div class="wave" id="wave4"></div>
+    </div>
+    <ul class="social_icon">
+        <li><a href=""><ion-icon name="logo-facebook"></ion-icon></a></li>
+        <li><a href=""><ion-icon name="logo-tiktok"></ion-icon></a></li>
+        <li><a href=""><ion-icon name="logo-instagram"></ion-icon></a></li>
+        <li><a href=""><ion-icon name="logo-twitter"></ion-icon></a></li>
+        <li><a href=""><ion-icon name="logo-github"></ion-icon></a></li>
+    </ul>
+    <ul class="menu">
+        <li><a href="">Home</a></li>
+        <li><a href="">Products</a></li>
+        <li><a href="">Account</a></li>
+        <li><a href="">About</a></li>
+        <li><a href="">Cart</a></li>
+    </ul>
+    <p>We are celling this site | All Rights Reserved</p>
+</footer>
+       
+    <script>
+        var LoginForm = document.getElementById("LoginForm");
+        var RegForm = document.getElementById("RegForm");
+        var Indicator = document.getElementById("Indicator");
+        function register(){
+            RegForm.style.transform = "translateX(0px)";
+            LoginForm.style.transform = "translateX(0px)";
+            Indicator.style.transform = "translateX(100px)";
+        }
+        function login(){
+            RegForm.style.transform = "translateX(300px)";
+            LoginForm.style.transform = "translateX(300px)";
+            Indicator.style.transform = "translateX(0px)";
+        }
+
+
+    </script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>
