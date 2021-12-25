@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>HP laptop</title>
+</head>
+<body>
+   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+<div class="container">
+    <div class="navbar">
+        <div class="logo">
+            <a href="home.html"  class="shop">ShopLaptop</a> 
+        </div>
+        <nav>
+            <ul id="MenuItems">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="account.html">Account</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="support.html">Support</a></li>
+            </ul>
+        </nav>
+       <a href="cart.html"> <img src="cart.png" width="30px" height="30px"> </a>
+        <img src="menu.png" class="menu-icon" onclick="menutoggle()">
+    </div>
+   
+</div>
+
+<div class="small-container single-product">
+    <div class="row">
+        <div class="col-2">
+            <img src="gallery-1.jpg" width="100%" id="ProductImg">
+            <div class="small-img-row">
+                <div class="small-img-col">
+                    <img src="gallery-1.jpg" width="100%" id="SmallImg">
+                </div>
+                <div class="small-img-col">
+                    <img src="gallery-2.jpg" width="100%" id="SmallImg">
+                </div>
+                <div class="small-img-col">
+                    <img src="gallery-3.jpg" width="100%" id="SmallImg">                        
+                </div>
+                <div class="small-img-col">
+                    <img src="gallery-4.jpg" width="100%" id="SmallImg">
+                </div>
+            </div>
+        </div>
+        <div class="col-2">
+            <p>Home / Laptops / HP</p>
+            <h1>HP Laptop 15</h1>
+            <div class="katar">
+                <h4>$</h4><h4 id='price'>750</h4>
+            </div>
+            
+            <select>
+                <option>Select color</option>
+                <option>Black</option>
+                <option>White</option>
+                <option>Blue</option>
+                <option>Gray</option>
+            </select>
+            <input type="number" value="1" id='amount' onclick="pri()">
+            <a href="cart.html" class="btn"> Add To Cart</a>
+            <h3>Product Details <i class="fa fa-indent"></i> </h3>
+            <br>
+            <p>Laptop with a 15.6-inch screen, operating on the IPS matrix, which transmits colors with maximum accuracy, 
+                has the greatest coverage of shades and fixed power consumption. Liquid crystals, of which it consists, 
+                is practically not susceptible to wear. The presence of a special anti-glare coating allows you to work both with 
+                artificial and natural light - it is very convenient if you like to spend time in public spaces. Thanks to this layer, 
+                you can work comfortably with texts and numbers. The 2-core Intel Core i3 1115G4 processor with a frequency of 3.0 GHz 
+                allows you to run various office and professional applications, explore Internet spaces, watch movies and TV shows and more
+
+            </p>
+        </div>
+    </div>
+</div>
+
+<div class="small-container">
+    <div class="row row-2">
+        <h2>Related Products</h2>
+        <p>View More</p>
+    </div>
+</div>
+
+
+
+<div class="small-container">    
+    
+    <div class="row">
+        <div class="col-4">
+            <a href="product-details.html">  <img src="product-9.jpg"></a>
+            <h4>Lenovo IdeaPad 5</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+            <p>$400.00</p>
+        </div>
+        <div class="col-4">
+            <a href="product-details.html">  <img src="product-10.jpg"></a>
+            <h4>Apple MacBook Air</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-o"></i>
+            </div>
+            <p>$700.00</p>
+        </div>
+        <div class="col-4">
+            <a href="product-details.html"> <img src="product-11.jpg"></a>
+            <h4>ASUS ZenBook</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-o"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+            <p>$750.00</p>
+        </div>
+        <div class="col-4">
+            <a href="product-details.html">  <img src="product-12.jpg"></a>
+            <h4>Acer Nitro 5</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+            <p>$900.00</p>
+        </div>
+    </div>   
+   
+
+</div>
+<footer>
+    <div class="waves">
+        <div class="wave" id="wave1"></div>
+        <div class="wave" id="wave2"></div>
+        <div class="wave" id="wave3"></div>
+        <div class="wave" id="wave4"></div>
+    </div>
+    <ul class="social_icon">
+        <li><a href=""><ion-icon name="logo-facebook"></ion-icon></a></li>
+        <li><a href=""><ion-icon name="logo-tiktok"></ion-icon></a></li>
+        <li><a href=""><ion-icon name="logo-instagram"></ion-icon></a></li>
+        <li><a href=""><ion-icon name="logo-twitter"></ion-icon></a></li>
+        <li><a href=""><ion-icon name="logo-github"></ion-icon></a></li>
+    </ul>
+    <ul class="menu">
+        <li><a href="">Home</a></li>
+        <li><a href="">Products</a></li>
+        <li><a href="">Account</a></li>
+        <li><a href="">About</a></li>
+        <li><a href="">Cart</a></li>
+    </ul>
+    <p>We are celling this site | All Rights Reserved</p>
+</footer>
+
+    <script> 
+        var ProductImg = document.getElementById("ProductImg");
+        var SamllImg = document.getElementById("SmallImg");
+        var price = document.getElementById("price");
+        var amount = document.getElementById("amount");
+        SmallImg[0].onclick = function(){
+            ProductImg.src = SmallImg[0].src;
+        }
+        SmallImg[1].onclick = function(){
+            ProductImg.src = SmallImg[1].src;
+        }
+        SmallImg[2].onclick = function(){
+            ProductImg.src = SmallImg[2].src;
+        }
+        SmallImg[3].onclick = function(){
+            ProductImg.src = SmallImg[3].src;
+        }
+        function pri() {
+            price.innerHTML = 750*amount.value;
+        }
+    </script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+
+
+</body>
+</html>
